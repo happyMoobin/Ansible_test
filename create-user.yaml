@@ -1,0 +1,9 @@
+# create-user.yaml
+---
+- hosts: all
+  vars_files:
+    - user.yaml
+  tasks:
+   - name: create user {{ user }}
+     user:
+       name: "{{ user }}"

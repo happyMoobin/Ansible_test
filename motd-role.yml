@@ -1,0 +1,6 @@
+# motd-role.yml
+---
+- name: use motd role
+  hosts: seoul
+  roles:
+    - motd
